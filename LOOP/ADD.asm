@@ -1,0 +1,8 @@
+MOV BX,10H
+MOV CX,05H
+MOV AX,00H
+BACK:  ADD AX,BX
+       DEC CX
+       JNZ BACK
+       MOV DX,AX
+       HLT 
